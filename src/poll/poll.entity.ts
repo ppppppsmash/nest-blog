@@ -1,19 +1,15 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm'
+import { User } from 'src/user/user.entity';
+import { Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
 
-@Entity('users')
-export class User {
-  @PrimaryGeneratedColumn('uuid')
-  id: string;
-
-  @Column()
-  userName: string;
+@Entity()
+export class Poll {
+  @PrimaryGeneratedColumn()
+  id: number;
 
   @Column()
-  email: string;
+  name: string;
 
-  @Column()
-  password: string;
-
-  @Column({ default: false })
-  confirmed: boolean;
+  @ManyToOne(() => User, user => user.poll)
+  @JoinColumn()
+  user: Promise<User>;
 }
