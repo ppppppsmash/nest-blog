@@ -1,7 +1,6 @@
 "use client";
 import { PostType } from '@/constant/Types'
 import { getAllPosts } from '@/utils/api';
-import Image from 'next/image'
 import { useEffect, useState } from 'react';
 
 export default function Home() {
@@ -21,8 +20,8 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center p-24">
       <h1>Nest.js Blog</h1>
-      <div className="mt-20">
-        <ul>
+      <div className="mt-10">
+        <ul className="mt-8">
           {posts.map((post: PostType, index) => (
             <li key={post.id}>
               <h2>{post.title}</h2>
