@@ -2,6 +2,6 @@ export interface PostType {
   id: string;
   title: string;
   content: string;
-  authoer: string;
-  createAt: string;
+  author: string;
+  createdAt: string;
 }
