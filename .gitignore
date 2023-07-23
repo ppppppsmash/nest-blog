@@ -1,9 +1,9 @@
 # compiled output
-/dist
-/node_modules
+nestjs-blog-api/dist
+nestjs-blog-api/node_modules
 
 # Logs
-logs
+nestjs-blog-api/logs
 *.log
 npm-debug.log*
 pnpm-debug.log*
@@ -13,23 +13,63 @@ lerna-debug.log*
 
 # OS
 .DS_Store
+nestjs-blog-api/.DS_Store
 
 # Tests
-/coverage
-/.nyc_output
+nestjs-blog-api/coverage
+nestjs-blog-api/.nyc_output
 
 # IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+nestjs-blog-api/.idea
+nestjs-blog-api/.project
+nestjs-blog-api/.classpath
+nestjs-blog-api/.c9/
+nestjs-blog-api/*.launch
+nestjs-blog-api/.settings/
+nestjs-blog-api/*.sublime-workspace
 
 # IDE - VSCode
-.vscode/*
+nestjs-blog-api/.vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+
+
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+nestjs-blog-frontend/node_modules
+nestjs-blog-frontend/.pnp
+nestjs-blog-frontend/.pnp.js
+
+# testing
+nestjs-blog-frontend/coverage
+
+# next.js
+nestjs-blog-frontend/.next/
+nestjs-blog-frontend/out/
+
+# production
+nestjs-blog-frontend/build
+
+# misc
+nestjs-blog-frontend/.DS_Store
+nestjs-blog-frontend/*.pem
+
+# debug
+nestjs-blog-frontend/npm-debug.log*
+nestjs-blog-frontend/yarn-debug.log*
+nestjs-blog-frontend/yarn-error.log*
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+nestjs-blog-frontend/*.tsbuildinfo
+nestjs-blog-frontend/next-env.d.ts
