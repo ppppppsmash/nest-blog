@@ -12,4 +12,10 @@ export class PostsService {
   create(post: PostType) {
     this.posts.push(post);
   }
+
+  find(id: string): PostType {
+    return this.posts.find((post) => {
+      post.id === id
+    });
+  }
 }
