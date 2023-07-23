@@ -1,5 +1,5 @@
 "use client";
-import { PostType } from '@/constant/Types'
+import { PostType } from "@/constant/Types";
 import { getAllPosts } from '@/utils/api';
 import { useEffect, useState } from 'react';
 
